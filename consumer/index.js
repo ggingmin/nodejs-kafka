@@ -2,7 +2,7 @@ const express = require('express');
 const { Kafka } = require('kafkajs');
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 const brokerUrl = process.env.KAFKA_BROKER_URL || 'kafka-0:9092';
 console.log('connect to', brokerUrl);
